@@ -13,10 +13,15 @@ function update(items,quantity){
         newObject[add]=quantity
         console.log(`${items},${quantity}`);
        }
-
     
 }
 update("onions",55);
+//Write a function to update the stock quantity of an existing item.
+function update(quantities){
+   let index=newObject.findIndex(newObject=>newObject.quantity ===quantity);
+return index;
+}
+update(3);
 //Write a function to calculate the total 
 //number of items in the inventory.
 
@@ -43,6 +48,6 @@ function Lowest() {
     }
     return lowest.quantity;
   }
-  lowest();
+  Lowest();
 
 
